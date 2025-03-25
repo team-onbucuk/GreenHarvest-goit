@@ -1,0 +1,160 @@
+/* === Mobil Genel Stil Ayarları === */
+
+
+.section-hero {
+    padding: 100px 0px 412px 0px; /* Üstten 100px, alttan 412px boşluk bırak */
+    height: auto; /* Otomatik yükseklik ayarlanır */
+    background: #576f35; /* Arka plan rengi */
+    background-image: url(../img/hero/hero–mobile/img-1-mobile.jpg); /* Arka plan resmi */
+    background-position: center; /* Arka planın ortalanması */
+    background-repeat: no-repeat; /* Tekrarlanmasın */
+    background-position-y: bottom; /* Y ekseninde altta konumlanır */
+  }
+  
+
+  
+  /* === Hero Başlık Ayarları === */
+  .hero-title {
+    font-weight: 600; /* Kalın font */
+    font-size: 52px; /* Yazı boyutu */
+    line-height: 1; /* Satır yüksekliği */
+    letter-spacing: -0.01em; /* Harf aralığı */
+    text-transform: uppercase; /* Tamamı büyük harf */
+    color: #fbfbfb; /* Yazı rengi beyaz */
+    margin-bottom: 20px; /* Alt boşluk */
+  }
+  
+
+  
+  /* === Hero Açıklama Metni === */
+  .hero-p {
+    font-weight: 500; /* Orta kalınlıkta yazı */
+    font-size: 14px; /* Küçük font boyutu */
+    line-height: 1.43; /* Satır yüksekliği */
+    color: #fbfbfb; /* Beyaz renk */
+  }
+  /* ----------------------------------------------------------------------------  */
+  
+  /* === Tablet Ekranlar için  === */
+  @media only screen and (min-width: 768px) {
+    .container {
+      max-width: 736px; /* İçerik genişliği */
+    }
+  
+    .section-hero {
+      padding: 120px 0px 588px 0px; /* Üstten ve alttan boşluklar artırıldı */
+      width: 100%; /* Tam genişlik */
+      background-image: url(../img/hero/hero–tablet/img-1-tablet.jpg); /* Tablet için görsel */
+    }
+  
+    /* Tablet için yüksek çözünürlüklü ekranlarda (Retina) */
+    @media screen and (min-width: 768px) and (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .section-hero {
+        background-image: url(../img/hero/hero–tablet/img-1-tablet@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: 768px; /* Retina ekran için optimize edilmiş boyut */
+      }
+    }
+  
+    .hero-title {
+      font-size: 76px; /* Daha büyük başlık */
+      width: 704px; /* Başlığın genişliği */
+      margin-bottom: 24px; /* Alt boşluk */
+    }
+  
+    .hero-p {
+      width: 603px; /* Açıklama metni genişliği */
+      font-family: 'Inter Tight', sans-serif; /* Yazı tipi */
+      font-size: 16px; /* Font boyutu büyütüldü */
+      line-height: 1.25; /* Satır yüksekliği */
+      color: #fbfbfb; /* Beyaz renk */
+    }
+  }
+
+
+
+  /* ------------------------------------------------------------- */ 
+  
+  /* ===                     WEB İÇİN                                  === */
+
+
+
+
+  @media only screen and (min-width: 1280px) {
+    .container {
+      max-width: 1112px; /* İçerik genişliği */
+    }
+  
+    .section-hero {
+      padding: 232px 0px 52px 50px; /* Büyük boşluklar */
+      width: 100%;
+      min-height: 796px; /* Minimum yükseklik */
+     
+      margin: 0 auto; /* Ortalanmış */
+      background-image: url(../img/hero/hero–desktop/img-1-desktop.jpg); /* Masaüstü için görsel */
+      background-position: calc(50% + 320px) top; /* Yatayda kaydırılmış pozisyon */
+      background-position: right center;/* sağ tarafa yasladık */ 
+      background-size: 50% auto;
+      
+    }
+  
+    /* Masaüstü için yüksek çözünürlüklü ekranlarda (Retina) */
+    @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .section-hero {
+        background-image: url(../img/hero/hero–desktop/img-1-desktop@2x.jpg); /* Retina için görsel */
+       
+        
+        background-repeat: no-repeat; /* Tekrarlanmaz */
+        background-position: right center;/* sağ tarafa yasladık */ 
+        background-size: 50% auto;
+      }
+    }
+  
+    .hero-title {
+        margin-left: -20%; /*  sola yanaştırıldı*/
+      font-weight: 700;
+      font-size: 90px;
+      color: #fbfbfb;
+      max-width: 600px; /* Başlığın genişliği */
+      margin-bottom: 150px; /* Alt boşluk artırıldı */
+  
+    }
+  
+    .hero-p {
+      width: 471px; /* Açıklama metni genişliği */
+      font-family: 'Inter Tight', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.25;
+      color: #fbfbfb;
+      margin: 0; /* Margin sıfırlandı */
+    }
+  }
+
+  /* ------------------------------------------------------------------------------ */ 
+
+
+    /* === Yüksek Çözünürlüklü Mobil Cihazlar için (Retina) === */
+    @media screen and (min-width: 375px) and (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      padding: 100px 0px 412px 0px;
+      width: 100%; /* Genişlik tamamen doldurulur */
+      background: #576f35; /* Arka plan rengi */
+      background-image: url(../img/hero/hero–mobile/img-1-mobile@2x.jpg); /* Retina ekranlar için yüksek çözünürlüklü görsel */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      background-size: 375px; /* Görsel genişliği 375px olarak ayarlanır */
+    }
+  }
+
+    /* === Küçük Ekranlar için Dinamik Başlık Boyutu === */
+    @media screen and (max-width: 353px) {
+        .hero-title {
+          font-size: clamp(46px, 2.5vw, 52px); /* Ekran boyutuna göre dinamik font boyutu */
+        }
+      }
+  
