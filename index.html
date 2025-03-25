@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Harvest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/container.css" />
+
 </head>
 <body>
-    
+   
+    <main>
+        <!-- <load> etiketi burada kullanılıyor -->
+        <load src="./sections/hero.html"></load>
+    </main>
+   
+
+    <script>
+        // <load> etiketini tanımlayan JavaScript kodu
+        document.querySelectorAll('load').forEach(async (element) => {
+            const src = element.getAttribute('src');
+            try {
+                const response = await fetch(src);
+                if (!response.ok) throw new Error('Dosya yüklenemedi.');
+                const content = await response.text();
+                element.outerHTML = content;
+            } catch (error) {
+                console.error('Hata:', error);
+            }
+        });
+    </script>
 </body>
 </html>
