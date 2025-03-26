@@ -1,0 +1,74 @@
+.advertisement {
+  background: #fbfbfb;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advertisement-text-fill {
+  color: #fbfbfb;
+}
+
+.background-container-advertisement {
+  position: relative;
+}
+
+.background-advertisement-text {
+  position: absolute;
+  background-color: #576f35;
+  height: 100px;
+  width: 350px;
+  border-radius: 12px;
+  left: -10px;
+  flex-shrink: 5;
+}
+
+.advertisement-text {
+  color: #141414;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  max-width: 330px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .advertisement-text {
+    padding: 0 16px;
+    font-size: 64px;
+    line-height: 1.09;
+    max-width: 704px;
+  }
+
+  .background-advertisement-text {
+    height: 86px;
+    width: 710px;
+    top: -10px;
+    left: -8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .background-advertisement-text {
+    height: 85px;
+    width: 808px;
+    top: -5px;
+    left: 2px;
+  }
+  .advertisement-text {
+    font-size: 76px;
+    line-height: 1.05;
+    max-width: 1070px;
+  }
+}
