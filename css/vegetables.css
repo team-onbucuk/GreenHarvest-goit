@@ -31,8 +31,8 @@ ul {
   font-weight: 600;
   line-height: 64px;
   letter-spacing: -1.5%;
-  text-transform: uppercase;
   color: #ffffff;
+  padding-left: 150px;
 }
 
 .vegetables-title span {
@@ -40,11 +40,13 @@ ul {
 }
 
 .vegetables-text {
-  max-width: 626px;
+  max-width: 800px;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+  letter-spacing: 0%;
+  padding-left: 130px;
   color: #fbfbfb;
 }
 
