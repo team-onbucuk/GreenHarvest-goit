@@ -35,6 +35,10 @@ ul {
   color: #ffffff;
 }
 
+.vegetables-title span {
+  color: #d4bfc4;
+}
+
 .vegetables-text {
   max-width: 626px;
   text-align: center;
