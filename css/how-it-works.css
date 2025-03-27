@@ -79,21 +79,46 @@
 .hiw-blocks {
     border-radius: 15px;
     padding: 12px 25px 12px 24px;
-    width: 450px;
+    width: 440px;
     height: 76px;
     background: #FBFBFB;
     display: flex;
     position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
+.hiw-block-number {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FBFBFB;
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #7A3145;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:5px solid #D4BFC4;
+
+}
 .hiw-blocktext {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 125%;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.02em;
     color: #858585;
-    position: absolute;
+    display:block;
+    right: 0px;
+    text-align: center;
+    justify-content:right;
 }
 
 .block-span {
@@ -104,7 +129,7 @@
 .blocksalign {
     align-items: center;
     justify-content: center;
-    margin-left: 24px;
+    padding: 6px 0px 6px 76px;
 }
 
 /********** responsive CSS contents for TABLET ***********/
