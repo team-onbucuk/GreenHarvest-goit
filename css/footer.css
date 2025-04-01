@@ -1,0 +1,80 @@
+/* Footer  */
+.footer {
+  background-color: #7a3145;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1280px;
+  height: 392px;
+  margin: auto;
+  padding: 52 100px;
+  gap: 124px;
+}
+
+/* sol  */
+.icon-Vector:before {
+  content: "\e901";
+  color: #fbfbfb;
+}
+
+.footer-left {
+  width: 30%;
+  text-align: left;
+}
+
+.footer-left .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-left p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.footer-links {
+  font-size: 12px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* orta */
+.footer-middle {
+  width: 30%;
+  text-align: left;
+}
+
+.footer-middle h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* sağ */
+.footer-right {
+  width: 30%;
+  text-align: left;
+}
+
+.footer-right p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: left;
+  padding-top: 15px;
+  font-size: 12px;
+}
